@@ -1,7 +1,7 @@
 # is-port-available (nodejs)
 
-```(async) isPortAvailable()``` : Will test the requested port, resolving the returned Promise with ```true```, when port is AVAILABLE, and ```false``` when not AVAILABLE. When port is **NOT AVAILABLE**, the reason (err.code | err) can be checked reading ```isPortAvailable.lastError``` property.
-Note : ```isPortAvailable.lastError``` is reset automatically before each call to isPortAvailable
+```(async) isPortAvailable()``` : Will test the requested port, resolving the returned Promise with ```true```, when port **IS AVAILABLE**, and ```false``` when not AVAILABLE. When port is **NOT AVAILABLE**, the reason (err.code | err) can be checked reading ```isPortAvailable.lastError``` property.
+> Note : ```isPortAvailable.lastError``` is reset automatically before each call to isPortAvailable
 
 **@param  {integer}  port** 	Number of the port to check
 
@@ -13,7 +13,7 @@ Use npm to install the module :
 ```$ npm install --save is-port-available```
 
 ### Usage
-Example of a simple port avaiability test via Promise.then():
+Example of a simple port avaiability test via ```Promise.then()```:
 ```javascript
 	const isPortAvailable = require('is-port-available');
 

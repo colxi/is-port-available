@@ -1,6 +1,6 @@
 {
   "author": "colxi <colxi.kl@gmail.com> (http://colxi.info)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "is-port-available",
   "description": "Check if the requested port is available or instead used",
   "main": "index.js",

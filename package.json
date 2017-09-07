@@ -9,6 +9,5 @@
   "author": "colxi <colxi.kl@gmail.com> (http://colxi.info)",
   "license": "GPL",
   "dependencies": {
-    "http": "0.0.0"
   }
 }

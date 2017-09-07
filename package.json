@@ -1,14 +1,13 @@
 {
   "author": "colxi <colxi.kl@gmail.com> (http://colxi.info)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "is-port-available",
   "description": "Check if the requested port is available or instead used",
   "main": "index.js",
   "license": "GPL",
-  "dependencies": {
-  },
-  "repository" : {
-      "type" : "git",
-      "url" : "https://github.com/colxi/is-port-available.git"
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colxi/is-port-available.git"
   }
 }

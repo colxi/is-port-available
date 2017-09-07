@@ -2,7 +2,7 @@
 * @Author: colxi.kl
 * @Date:   2017-09-05 22:17:51
 * @Last Modified by:   colxi.kl
-* @Last Modified time: 2017-09-07 05:40:55
+* @Last Modified time: 2017-09-07 06:06:13
 */
 
 /**
@@ -19,14 +19,19 @@
  */
 const net = require("net");
 
-const isPortAvailable = function(port){
+var isPortAvailable = function(port){
+	isPortAvailable.lastError = "";
 	return new Promise((resolve, reject) => {
 		port = parseInt(port);
 		const tester = net.createServer()
-			.once('error', err => ( (err.code == 'EADDRINUSE' || err.code === 'EACCES') ? resolve(false) : reject(err)))
+			.once('error', err =>{
+				isPortAvailable.lastError = err.code || err; // EADDRINUSE , EACCES ...
+				resolve(false);
+			})
 			.once('listening', () => tester.once('close', () => resolve(true)).close())
 			.listen(port);
 	});
 };
+isPortAvailable.lastError = "";
 
 module.exports = isPortAvailable;

@@ -8,9 +8,11 @@
 
 ### Installation
 
-```$ npm install is-port-available```
+Use npm to install the module :
+```$ npm install --save is-port-available```
 
 ### Usage
+Simple port avaiability test:
 ```javascript
 	const isPortAvailable = require('is-port-available');
 
@@ -19,7 +21,7 @@
 	try( available = isPortAvailable(port) }
 	catch(err){ console.log('Error happened :' , err) }
 
-	console.log('Port '+ port + (available ? ' IS ' : ' IS NOT ') + 'available!')
+	console.log('Port '+ port + (available ? ' IS ' : ' IS NOT ') + 'available!');
 ```
 
 ## Licence

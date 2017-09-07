@@ -14,6 +14,9 @@
 Use npm to install the module :
 ```$ npm install --save is-port-available```
 
+
+[NPM Package Page](https://www.npmjs.com/package/is-port-available)
+
 ### Usage
 Example of a simple port avaiability test via ```Promise.then()```:
 ```javascript

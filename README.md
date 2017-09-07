@@ -3,9 +3,10 @@
 ```(async) isPortAvailable()``` : Will test the requested port, resolving the returned Promise with ```true```, when port **IS AVAILABLE**, and ```false``` when not AVAILABLE. When port is **NOT AVAILABLE**, the reason (err.code | err) can be checked reading ```isPortAvailable.lastError``` property.
 > Note : ```isPortAvailable.lastError``` is reset automatically before each call to isPortAvailable
 
-**@param  {integer}  port** 	Number of the port to check
+### Methods
 
-**@return {Boolean}**     	  Returns a Promise that can resolve in TRUE|FALSE or be rejected with an Error
+```isPortAvailable( port )```  (function) => Expects an integer, and returns a Promise that resolves in true|false
+```isPortAvailable.lastError``` (string) => Contains the last call error (EADDRINUSE, EACCES...)
 
 ### Installation
 

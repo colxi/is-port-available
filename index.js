@@ -2,7 +2,7 @@
 * @Author: colxi.kl
 * @Date:   2017-09-05 22:17:51
 * @Last Modified by:   colxi.kl
-* @Last Modified time: 2017-09-07 06:06:13
+* @Last Modified time: 2017-09-07 06:24:37
 */
 
 /**
@@ -19,6 +19,7 @@
  */
 const net = require("net");
 
+// main function
 var isPortAvailable = function(port){
 	isPortAvailable.lastError = "";
 	return new Promise((resolve, reject) => {
@@ -32,6 +33,7 @@ var isPortAvailable = function(port){
 			.listen(port);
 	});
 };
+// Last Error track
 isPortAvailable.lastError = "";
 
 module.exports = isPortAvailable;

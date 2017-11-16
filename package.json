@@ -7,13 +7,13 @@
     "port busy",
     "is port available ",
     "isportavailable",
-    "port free",
+    "port free",  
     "is port free"
   ],
   "name": "is-port-available",
   "description": "Check if the requested port is available or instead used",
   "main": "index.js",
-  "license": "GPL",
+  "license": "GPL-3.0",
   "dependencies": {},
   "repository": {
     "type": "git",
